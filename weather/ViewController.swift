@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getWeatherButton.addTarget(self, action: #selector(didTapGetWeatherButton), for: .touchUpInside)
+        print("Hello, World")
     }
+    
     @objc func didTapGetWeatherButton() {
         weatherLabel1.text = "Tap"
     }
